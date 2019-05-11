@@ -1,0 +1,103 @@
+
+ body{
+  font-size: 100%;
+  background-image: url(../images/homepic.jpg);
+  background-size: cover;
+  font-display
+}
+
+.navigation {
+ /* background-color:  #D3D3D3; */
+ overflow: hidden;
+}
+
+.navigation a {
+   text-align: right;
+   color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigation ul{
+    float: right;
+}
+
+
+ .navigation a:hover {
+  color: black;
+}
+
+.navigation img{
+  float: left;
+  height: 60px;
+  width: 60px;
+  color: black;
+
+}
+
+.content{
+    text-align: center;
+    
+    
+}
+
+.greetings{
+  margin-top: 0.5px;
+  margin-left: 50px;
+
+}
+
+.greetings h1 {
+  margin-top: 0.5%;
+  padding-top: 10%;
+  padding-bottom: 50px;
+  align-items: center;
+  color: black;
+  
+  
+  
+}
+.greetings p{
+  color: burlywood;
+  margin-top: 0.5%;
+  padding-top: 10%;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.greetings h1{
+  margin-left: 25%;
+}
+
+h1{
+   font-size: 350%;
+}
+
+p{
+   font-size: 150%;
+   font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.about-us-body{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+  
+}
+
+ .visible{
+  color: black;
+}
+
+.log-in-form{
+  text-align: center;
+  text-align: justify;
+  text-justify: auto;
+  
+}
