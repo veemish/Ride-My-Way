@@ -1,49 +1,47 @@
-*{
+* {
   margin: 0;
-  padding:0;
-  font-family:'Dosis', sans-serif;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
   box-sizing: border-box;
 }
 
 .container {
-   Width: 100%;
-   background-size: cover;
-   overflow: hidden;
-   position:  relative;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
 
 .banner {
- width: 40%;
- position:absolute;
- top: 30%;
- left: 0%;
- transform: translate(-50, -50);
- text-align: center;
- background-color:#dfced7;
- margin-left: 30%;
- padding:2.5%;
- border-radius: 35px;
- opacity: 0.9;
- 
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  transform: translate(-50, -50);
+  text-align: center;
+  background-color: #dfced7;
+  margin-left: 30%;
+  padding: 2.5%;
+  border-radius: 35px;
+  opacity: 0.9;
 }
 
-.banner h1{
+.banner h1 {
   font-size: 40px;
   color: rgb(19, 20, 20);
   font-weight: 300;
   margin-bottom: 30px;
   animation-name: moveToLeft;
   animation-duration: 2s;
-
 }
 
-.banner span{
-text-transform: uppercase;
-font-weight: 700;
-color: black;
+.banner span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
 }
 
-.banner p{
+.banner p {
   font-size: 50px;
   font-weight: 400;
   color: black;
@@ -52,153 +50,144 @@ color: black;
   animation-duration: 2s;
 }
 
-.banner button{
- width: 100px;
-   padding: 12px;
-   margin-right: 20px;
-   border: 2px solid rgb(79, 130, 177);
-   border-radius: 50px;
-   font-size: 18px;
-   outline: none;
-   letter-spacing: 1px;
-   cursor: pointer;
-   
+.banner button {
+  width: 100px;
+  padding: 12px;
+  margin-right: 20px;
+  border: 2px solid rgb(79, 130, 177);
+  border-radius: 50px;
+  font-size: 18px;
+  outline: none;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
-.btn-left{
-  background-color:#eee;
+.btn-left {
+  background-color: #eee;
   color: #444;
   animation-name: animateBtn;
   animation-duration: 1s;
   animation-delay: 1.5s;
   animation-fill-mode: backwards;
-
 }
 
 .btn-right {
-  background-color:transparent;
+  background-color: transparent;
   color: rgb(32, 31, 31);
   animation-name: animateBtn;
   animation-duration: 1s;
   animation-delay: 2.3s;
-  animation-fill-mode:  backwards;
+  animation-fill-mode: backwards;
+}
 
+@keyframes moveToLeft {
+  0% {
+    transform: translate(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
-     
-@keyframes moveToLeft{
-   0% {
-       transform:  translate(120px);
-       opacity: 0;                 
-    }100%{
-       transform:  translate(0);
-       opacity: 1; 
-    }
- 
+@keyframes moveToRight {
+  0% {
+    transform: translate(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
-@keyframes moveToRight{
-   0% {
-       transform:  translate(-120px);
-       opacity: 0;                 
-    }100%{
-       transform:  translate(0);
-       opacity: 1; 
-    }
- 
-}
-@keyframes animateBtn{
-   0%{
-      opacity: 0;
-   }
+@keyframes animateBtn {
+  0% {
+    opacity: 0;
+  }
 
-   100{
-      opacity: 1;
-   }
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn {
- text-decoration: none;
-
-}  
-
-table ,th, td{
-border: 1px solid black;
+  text-decoration: none;
 }
-th,td{
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+th,
+td {
   padding: 8px;
 }
 
-input[type=text]{
-         padding: 10px;
-         margin: 10px;
-       box-sizing: border-box;
-       border: 1px solid blue;
-       border-radius: 10px;
-}
- 
-input[type=password]{
-   padding: 10px;
-   margin: 10px;
- box-sizing: border-box;
- border: 1px solid blue;
- border-radius: 10px;
+input[type="text"] {
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: 1px solid blue;
+  border-radius: 10px;
 }
 
-input[type=email]{
-   padding: 10px;
-   margin: 10px;
- box-sizing: border-box;
- border: 1px solid blue;
- border-radius: 10px;
+input[type="password"] {
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: 1px solid blue;
+  border-radius: 10px;
 }
 
-input[type=submit]{
-   background-color: #333333;
-   color: #dfced7;
-   padding: 10px 15px;
+input[type="email"] {
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: 1px solid blue;
+  border-radius: 10px;
 }
 
+input[type="submit"] {
+  background-color: #333333;
+  color: #dfced7;
+  padding: 10px 15px;
+}
 
-
-
-input[type=text]:focus{
+input[type="text"]:focus {
   border: 2px solid red;
 }
 
 .flex-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100px;
-   width: 400px;
-   background-color: rgb(142, 165, 189);
- }
-
- .navigation{
-    margin-bottom:100px;
- }
-
- 
-
-.row{
-   float: left;
-} 
- 
-.row::after{
-   content: "";
-   display: table;
-   clear: both; 
-}
-  
- 
- 
-.block1{
-   float: left;
-   width: 33.33%;
-   border: 2px solid #eee ;
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 400px;
+  background-color: rgb(142, 165, 189);
 }
 
-.block2{
-    float: right;
-    border: 1px solid #000000;
- }
+.navigation {
+  margin-bottom: 100px;
+}
+
+.row {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.block1 {
+  float: left;
+  width: 33.33%;
+  border: 2px solid #eee;
+}
+
+.block2 {
+  float: right;
+  border: 1px solid #000000;
+}
