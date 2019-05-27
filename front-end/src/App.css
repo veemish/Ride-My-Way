@@ -157,37 +157,3 @@ input[type="submit"] {
 input[type="text"]:focus {
   border: 2px solid red;
 }
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 400px;
-  background-color: rgb(142, 165, 189);
-}
-
-.navigation {
-  margin-bottom: 100px;
-}
-
-.row {
-  float: left;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.block1 {
-  float: left;
-  width: 33.33%;
-  border: 2px solid #eee;
-}
-
-.block2 {
-  float: right;
-  border: 1px solid #000000;
-}
